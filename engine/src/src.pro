@@ -8,10 +8,11 @@ TARGET   = qlcplusengine
 
 CONFIG  += qt
 QT      += core xml script gui
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4) {
+  QT += widgets multimedia multimediawidgets
+  macx:QT_CONFIG -= no-pkg-config
+}
 
-# Uncomment to enable Phonon audio support
-#QT += phonon
 CONFIG += link_pkgconfig
 
 QTPLUGIN =
@@ -53,8 +54,14 @@ HEADERS += audio/audio.h \
            audio/audioparameters.h \
            audio/audiocapture.h
 
-unix:!macx:HEADERS += audio/audiorenderer_alsa.h audio/audiocapture_alsa.h
-win32:HEADERS += audio/audiorenderer_waveout.h audio/audiocapture_wavein.h
+lessThan(QT_MAJOR_VERSION, 5) {
+  unix:!macx:HEADERS += audio/audiorenderer_alsa.h audio/audiocapture_alsa.h
+  win32:HEADERS += audio/audiorenderer_waveout.h audio/audiocapture_wavein.h
+}
+else {
+  HEADERS += audio/audiorenderer_qt.h audio/audiocapture_qt.h
+  HEADERS += video.h
+}
 
 # Engine
 HEADERS += bus.h \
@@ -83,10 +90,12 @@ HEADERS += bus.h \
            inputpatch.h \
            ioplugincache.h \
            mastertimer.h \
+           monitorproperties.h \
            outputpatch.h \
            qlcclipboard.h \
            qlcpoint.h \
            rgbalgorithm.h \
+           rgbaudio.h \
            rgbmatrix.h \
            rgbimage.h \
            rgbscript.h \
@@ -116,6 +125,7 @@ SOURCES += avolitesd4parser.cpp \
            qlcinputprofile.cpp \
            qlcinputsource.cpp \
            qlcphysical.cpp
+
 # Audio
 SOURCES += audio/audio.cpp \
            audio/audiodecoder.cpp \
@@ -123,19 +133,25 @@ SOURCES += audio/audio.cpp \
            audio/audioparameters.cpp \
            audio/audiocapture.cpp
 
-unix:!macx:SOURCES += audio/audiorenderer_alsa.cpp audio/audiocapture_alsa.cpp
-win32:SOURCES += audio/audiorenderer_waveout.cpp audio/audiocapture_wavein.cpp
+lessThan(QT_MAJOR_VERSION, 5) {
+  unix:!macx:SOURCES += audio/audiorenderer_alsa.cpp audio/audiocapture_alsa.cpp
+  win32:SOURCES += audio/audiorenderer_waveout.cpp audio/audiocapture_wavein.cpp
 
-macx {
-  system(pkg-config --exists portaudio-2.0) {
-    DEFINES += HAS_PORTAUDIO
-    PKGCONFIG += portaudio-2.0
-    HEADERS += audio/audiorenderer_portaudio.h audio/audiocapture_portaudio.h
-    SOURCES += audio/audiorenderer_portaudio.cpp audio/audiocapture_portaudio.cpp
+  macx {
+    system(pkg-config --exists portaudio-2.0) {
+      DEFINES += HAS_PORTAUDIO
+      PKGCONFIG += portaudio-2.0
+      HEADERS += audio/audiorenderer_portaudio.h audio/audiocapture_portaudio.h
+      SOURCES += audio/audiorenderer_portaudio.cpp audio/audiocapture_portaudio.cpp
+    }
+
+  #  HEADERS += audio/audiorenderer_coreaudio.h
+  #  SOURCES += audio/audiorenderer_coreaudio.cpp
   }
-
-#  HEADERS += audio/audiorenderer_coreaudio.h
-#  SOURCES += audio/audiorenderer_coreaudio.cpp
+}
+else {
+  SOURCES += audio/audiorenderer_qt.cpp audio/audiocapture_qt.cpp
+  SOURCES += video.cpp
 }
 
 # Engine
@@ -164,10 +180,12 @@ SOURCES += bus.cpp \
            inputpatch.cpp \
            ioplugincache.cpp \
            mastertimer.cpp \
+           monitorproperties.cpp \
            outputpatch.cpp \
            qlcclipboard.cpp \
            qlcpoint.cpp \
            rgbalgorithm.cpp \
+           rgbaudio.cpp \
            rgbmatrix.cpp \
            rgbimage.cpp \
            rgbscript.cpp \

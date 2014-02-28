@@ -74,6 +74,7 @@ public:
 
 private:
     bool m_none;
+    QTreeWidgetItem *m_noneItem;
 
     /*********************************************************************
      * Multi-selection
@@ -128,6 +129,9 @@ protected slots:
     void slotRGBMatrixChecked(bool state);
     void slotShowChecked(bool state);
     void slotAudioChecked(bool state);
+#if QT_VERSION >= 0x050000
+    void slotVideoChecked(bool state);
+#endif
 
 private:
     int m_filter;

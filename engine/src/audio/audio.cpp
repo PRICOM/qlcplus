@@ -1,5 +1,5 @@
 /*
-  Q Light Controller
+  Q Light Controller Plus
   audio.cpp
 
   Copyright (c) Massimo Callegari
@@ -24,11 +24,6 @@
 
 #include <QMessageBox>
 
-#ifdef QT_PHONON_LIB
-#include <phonon/mediaobject.h>
-#include <phonon/backendcapabilities.h>
-#endif
-
 #include "audiodecoder.h"
 #ifdef HAS_LIBSNDFILE
   #include "audiodecoder_sndfile.h"
@@ -39,14 +34,19 @@
 
 #include "audiorenderer.h"
 
-#if defined(__APPLE__) || defined(Q_OS_MAC)
-  //#include "audiorenderer_coreaudio.h"
-  #include "audiorenderer_portaudio.h"
-#elif defined(WIN32) || defined(Q_OS_WIN)
-  #include "audiorenderer_waveout.h"
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+
+ #if defined(__APPLE__) || defined(Q_OS_MAC)
+   #include "audiorenderer_portaudio.h"
+ #elif defined(WIN32) || defined(Q_OS_WIN)
+   #include "audiorenderer_waveout.h"
+ #else
+   #include "audiorenderer_alsa.h"
+ #endif
 #else
-  #include "audiorenderer_alsa.h"
+ #include "audiorenderer_qt.h"
 #endif
+
 #include "audio.h"
 #include "doc.h"
 
@@ -128,9 +128,6 @@ bool Audio::copyFrom(const Function* function)
 QStringList Audio::getCapabilities()
 {
     QStringList cap;
-#ifdef QT_PHONON_LIB
-    return Phonon::BackendCapabilities::availableMimeTypes();
-#endif
 #ifdef HAS_LIBSNDFILE
     cap << AudioDecoderSndFile::getSupportedFormats();
 #endif
@@ -369,13 +366,17 @@ void Audio::preRun(MasterTimer* timer)
     {
         m_decoder->seek(elapsed());
         AudioParameters ap = m_decoder->audioParameters();
-#if defined(__APPLE__) || defined(Q_OS_MAC)
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+ #if defined(__APPLE__) || defined(Q_OS_MAC)
         //m_audio_out = new AudioRendererCoreAudio();
         m_audio_out = new AudioRendererPortAudio();
-#elif defined(WIN32) || defined(Q_OS_WIN)
+ #elif defined(WIN32) || defined(Q_OS_WIN)
         m_audio_out = new AudioRendererWaveOut();
-#else
+ #else
         m_audio_out = new AudioRendererAlsa();
+ #endif
+#else
+        m_audio_out = new AudioRendererQt();
 #endif
         m_audio_out->setDecoder(m_decoder);
         m_audio_out->initialize(ap.sampleRate(), ap.channels(), ap.format());

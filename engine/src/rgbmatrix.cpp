@@ -33,7 +33,7 @@
 #include "fadechannel.h"
 #include "rgbmatrix.h"
 #include "qlcmacros.h"
-#include "rgbtext.h"
+#include "rgbaudio.h"
 #include "doc.h"
 
 #define KXMLQLCRGBMatrixStartColor "MonoColor"
@@ -135,6 +135,11 @@ void RGBMatrix::setAlgorithm(RGBAlgorithm* algo)
     if (m_algorithm != NULL)
         delete m_algorithm;
     m_algorithm = algo;
+    if (m_algorithm != NULL && m_algorithm->type() == RGBAlgorithm::Audio)
+    {
+        RGBAudio *audio = static_cast<RGBAudio*>(m_algorithm);
+        audio->setAudioCapture(doc()->audioInputCapture());
+    }
 }
 
 RGBAlgorithm* RGBMatrix::algorithm() const
@@ -376,6 +381,7 @@ void RGBMatrix::preRun(MasterTimer* timer)
 
         Q_ASSERT(m_fader == NULL);
         m_fader = new GenericFader(doc());
+        m_fader->adjustIntensity(getAttributeValue(Intensity));
 
         if (m_direction == Forward)
         {
@@ -384,8 +390,15 @@ void RGBMatrix::preRun(MasterTimer* timer)
         }
         else
         {
-            m_step = m_algorithm->rgbMapStepCount(grp->size());
-            m_stepColor = m_endColor.rgb();
+            m_step = m_algorithm->rgbMapStepCount(grp->size()) - 1;
+            if (m_endColor.isValid())
+            {
+                m_stepColor = m_endColor.rgb();
+            }
+            else
+            {
+                m_stepColor = m_startColor.rgb();
+            }
         }
 
         calculateColorDelta();

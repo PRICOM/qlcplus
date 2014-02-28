@@ -54,10 +54,15 @@ FunctionSelection::FunctionSelection(QWidget* parent, Doc* doc)
     : QDialog(parent)
     , m_doc(doc)
     , m_none(false)
+    , m_noneItem(NULL)
     , m_multiSelection(true)
     , m_runningOnlyFlag(false)
     , m_filter(Function::Scene | Function::Chaser | Function::Collection |
-               Function::EFX | Function::Script | Function::RGBMatrix | Function::Show | Function::Audio)
+               Function::EFX | Function::Script | Function::RGBMatrix | Function::Show | Function::Audio
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+               | Function::Video
+#endif
+               )
     , m_disableFilters(0)
     , m_constFilter(false)
 {
@@ -110,6 +115,13 @@ FunctionSelection::FunctionSelection(QWidget* parent, Doc* doc)
     connect(m_audioCheck, SIGNAL(toggled(bool)),
             this, SLOT(slotAudioChecked(bool)));
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    connect(m_videoCheck, SIGNAL(toggled(bool)),
+            this, SLOT(slotVideoChecked(bool)));
+#else
+    m_videoCheck->hide();
+#endif
+
     QSettings settings;
     QVariant var = settings.value(SETTINGS_FILTER);
     if (var.isValid() == true)
@@ -128,6 +140,9 @@ int FunctionSelection::exec()
     m_rgbMatrixCheck->setChecked(m_filter & Function::RGBMatrix);
     m_showCheck->setChecked(m_filter & Function::Show);
     m_audioCheck->setChecked(m_filter & Function::Audio);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    m_videoCheck->setChecked(m_filter & Function::Video);
+#endif
 
     if (m_constFilter == true)
     {
@@ -139,6 +154,9 @@ int FunctionSelection::exec()
         m_rgbMatrixCheck->setEnabled(false);
         m_showCheck->setEnabled(false);
         m_audioCheck->setEnabled(false);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+        m_videoCheck->setEnabled(false);
+#endif
     }
     else
     {
@@ -150,6 +168,9 @@ int FunctionSelection::exec()
         m_rgbMatrixCheck->setDisabled(m_disableFilters & Function::RGBMatrix);
         m_showCheck->setDisabled(m_disableFilters & Function::Show);
         m_audioCheck->setDisabled(m_disableFilters & Function::Audio);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+        m_videoCheck->setDisabled(m_disableFilters & Function::Video);
+#endif
     }
 
     /* Multiple/single selection */
@@ -260,10 +281,10 @@ void FunctionSelection::refillTree()
     // Show a "none" entry
     if (m_none == true)
     {
-        QTreeWidgetItem* item = new QTreeWidgetItem(m_funcTree);
-        item->setText(KColumnName, tr("<No function>"));
-        item->setIcon(KColumnName, QIcon(":/uncheck.png"));
-        item->setData(KColumnName, Qt::UserRole, Function::invalidId());
+        m_noneItem = new QTreeWidgetItem(m_funcTree);
+        m_noneItem->setText(KColumnName, tr("<No function>"));
+        m_noneItem->setIcon(KColumnName, QIcon(":/uncheck.png"));
+        m_noneItem->setData(KColumnName, Qt::UserRole, Function::invalidId());
     }
 
     /* Fill the tree */
@@ -289,20 +310,17 @@ void FunctionSelection::refillTree()
 
 void FunctionSelection::slotItemSelectionChanged()
 {
-    QList <quint32> removeList(m_selection);
+    m_selection.clear();
 
     QListIterator <QTreeWidgetItem*> it(m_funcTree->selectedItems());
     while (it.hasNext() == true)
     {
-        quint32 id = it.next()->data(KColumnName, Qt::UserRole).toUInt();
-        if (m_selection.contains(id) == false)
-            m_selection.append(id);
-
-        removeList.removeAll(id);
+        QTreeWidgetItem *item = it.next();
+        quint32 id = item->data(KColumnName, Qt::UserRole).toUInt();
+        if ((id != Function::invalidId() || item == m_noneItem)
+             && m_selection.contains(id) == false)
+                    m_selection.append(id);
     }
-
-    while (removeList.isEmpty() == false)
-        m_selection.removeAll(removeList.takeFirst());
 
     if (m_selection.isEmpty() == true)
         m_buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
@@ -389,3 +407,14 @@ void FunctionSelection::slotAudioChecked(bool state)
         m_filter = (m_filter & ~Function::Audio);
     refillTree();
 }
+
+#if QT_VERSION >= 0x050000
+void FunctionSelection::slotVideoChecked(bool state)
+{
+    if (state == true)
+        m_filter = (m_filter | Function::Video);
+    else
+        m_filter = (m_filter & ~Function::Video);
+    refillTree();
+}
+#endif

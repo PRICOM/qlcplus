@@ -161,6 +161,29 @@ class FixtureDef
 
   def load(path)
     @doc = LibXML::XML::Document.file(path)
+    if @doc.root.namespaces.default.nil?
+      puts "fixing #{path}"
+      @doc.root.find('//Dimensions').each do |node|
+        node['Weight'] = node['Weight'].gsub(',','.')
+      end
+
+      @doc.root.find('//DegreesMin').each do |node|
+        node['Weight'] = node['Weight'].gsub(',','.')
+      end
+
+      @doc.root.find('//DegreesMax').each do |node|
+        node['Weight'] = node['Weight'].gsub(',','.')
+      end
+
+      @doc.root.find('//Author').each do |node|
+        node.content = node.content.gsub('hjunnila', 'Heikki Junnila').gsub('jlgriffin', 'JL Griffin').gsub('griffinwebnet', 'JL Griffin').gsub(',,,', '').gsub('&', '&amp;')
+      end
+
+      @doc.root.namespaces.namespace = LibXML::XML::Namespace.new(@doc.root, nil, "http://qlcplus.sourceforge.net/FixtureDefinition")
+      @doc.save(path, :indent => true, :encoding => LibXML::XML::Encoding::UTF_8)
+
+      @doc = LibXML::XML::Document.file(path)
+    end
     @path = path
     @manufacturer = @doc.find_first('/xmlns:FixtureDefinition/xmlns:Manufacturer', NS).content
     @model = @doc.find_first('/xmlns:FixtureDefinition/xmlns:Model', NS).content
@@ -195,6 +218,9 @@ class Fixtures
       LibXML::XML::Attr.new(node, 'mf', f.manufacturer)
       LibXML::XML::Attr.new(node, 'md', f.model)
       doc.root << node
+    end
+    if doc.root.namespaces.default.nil?
+      doc.root.namespaces.namespace = LibXML::XML::Namespace.new(doc.root, nil, "http://qlcplus.sourceforge.net/FixturesMap")
     end
     doc.save(filename, :indent => true, :encoding => LibXML::XML::Encoding::UTF_8)
   end
@@ -331,6 +357,11 @@ EOF
 EOF
     end
   end
+end
+
+# LibXML::XML::Error.set_handler(&LibXML::XML::Error::VERBOSE_HANDLER)
+LibXML::XML::Error.set_handler do |error|
+  puts error.to_s
 end
 
 fm = Fixtures.new

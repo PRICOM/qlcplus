@@ -61,7 +61,7 @@
         <location filename="addchannelsgroup.ui" line="66"/>
         <source>Apply changes to fixtures of the same type and mode</source>
         <oldsource>Apply changes to fixtures of the same type</oldsource>
-        <translation type="unfinished">Použít změny na zařízení stejného typu</translation>
+        <translation>Použít změny na zařízení stejného typu a v stejném režimu</translation>
     </message>
     <message>
         <location filename="addchannelsgroup.ui" line="73"/>
@@ -209,7 +209,7 @@
     <message>
         <location filename="addfixture.ui" line="250"/>
         <source>Quick search:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rychlé hledání</translation>
     </message>
     <message>
         <location filename="addfixture.ui" line="267"/>
@@ -233,95 +233,121 @@
     <message>
         <location filename="addrgbpanel.ui" line="14"/>
         <source>Add RGB Panel</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat RGB panel</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="209"/>
+        <source>Panel properties</source>
+        <translation>Vlastnosti panelu</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="223"/>
+        <source>Universe:</source>
+        <translation>Větev:</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="230"/>
+        <source>RGB Panel</source>
+        <translation>RGB panel</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="237"/>
+        <source>Name:</source>
+        <translation>Název:</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="247"/>
+        <source>Address:</source>
+        <translation>Adresa:</translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="264"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;ERROR: Address already used !&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;CHYBA: Tato adresa je již použita u jiného zařízení&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="addrgbpanel.ui" line="24"/>
-        <source>Panel properties</source>
-        <translation type="unfinished"></translation>
+        <source>Size</source>
+        <translation>Velikost</translation>
     </message>
     <message>
         <location filename="addrgbpanel.ui" line="38"/>
-        <source>Universe:</source>
-        <translation type="unfinished"></translation>
+        <source>Columns:</source>
+        <translation>Sloupců:</translation>
     </message>
     <message>
         <location filename="addrgbpanel.ui" line="45"/>
-        <source>RGB Panel</source>
-        <translation type="unfinished"></translation>
+        <source>Rows:</source>
+        <translation>Řádků:</translation>
     </message>
     <message>
         <location filename="addrgbpanel.ui" line="52"/>
-        <source>Name:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="addrgbpanel.ui" line="62"/>
-        <source>Address:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="addrgbpanel.ui" line="84"/>
-        <source>Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="addrgbpanel.ui" line="98"/>
-        <source>Columns:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="addrgbpanel.ui" line="105"/>
-        <source>Rows:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="addrgbpanel.ui" line="112"/>
         <source>Total pixels:</source>
-        <translation type="unfinished"></translation>
+        <translation>Celkem pixelů:</translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="139"/>
+        <location filename="addrgbpanel.ui" line="79"/>
         <source>100</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="151"/>
+        <location filename="addrgbpanel.ui" line="91"/>
         <source>Orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientace</translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="157"/>
+        <location filename="addrgbpanel.ui" line="97"/>
         <source>Top-Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="164"/>
+        <location filename="addrgbpanel.ui" line="104"/>
         <source>Top-Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="174"/>
+        <location filename="addrgbpanel.ui" line="114"/>
         <source>Bottom-Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="181"/>
+        <location filename="addrgbpanel.ui" line="121"/>
         <source>Bottom-Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="191"/>
+        <location filename="addrgbpanel.ui" line="141"/>
+        <source>Physical</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="158"/>
+        <source>Width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="165"/>
+        <location filename="addrgbpanel.ui" line="188"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="181"/>
+        <source>Height:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="addrgbpanel.ui" line="276"/>
         <source>Displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="197"/>
+        <location filename="addrgbpanel.ui" line="282"/>
         <source>Snake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="addrgbpanel.ui" line="207"/>
+        <location filename="addrgbpanel.ui" line="292"/>
         <source>Zig Zag</source>
         <translation type="unfinished"></translation>
     </message>
@@ -489,7 +515,7 @@
         <location filename="addresstool.ui" line="35"/>
         <source>Colour</source>
         <oldsource>Color</oldsource>
-        <translation type="unfinished">Barva</translation>
+        <translation>Barva</translation>
     </message>
     <message>
         <location filename="addresstool.ui" line="51"/>
@@ -706,22 +732,22 @@ Opravdu si přejete běžící funkce zastavit a přejít zpět do režimu Návr
     <message>
         <location filename="app.cpp" line="585"/>
         <source>Fade 1 second and stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeslabení 1 sekundu a poté zastavit</translation>
     </message>
     <message>
         <location filename="app.cpp" line="590"/>
         <source>Fade 5 seconds and stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeslabení 5 sekund a poté zastavit</translation>
     </message>
     <message>
         <location filename="app.cpp" line="595"/>
         <source>Fade 10 second and stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeslabení 10 sekund a poté zastavit</translation>
     </message>
     <message>
         <location filename="app.cpp" line="600"/>
         <source>Fade 30 second and stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeslabení 30 sekund a poté zastavit</translation>
     </message>
     <message>
         <location filename="app.cpp" line="607"/>
@@ -859,7 +885,7 @@ Zvolený soubor byl asi smazán nebo přesunut.</translation>
     <message>
         <location filename="app.cpp" line="1245"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Výstraha</translation>
     </message>
     <message>
         <location filename="app.cpp" line="1246"/>
@@ -940,12 +966,12 @@ Zvolený soubor byl asi smazán nebo přesunut.</translation>
     <message>
         <location filename="audioeditor.ui" line="165"/>
         <source>Fade in:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zesílení:</translation>
     </message>
     <message>
         <location filename="audioeditor.ui" line="189"/>
         <source>Fade out:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeslabení:</translation>
     </message>
 </context>
 <context>
@@ -1053,17 +1079,17 @@ Délka: %3
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="113"/>
         <source>Input</source>
-        <translation type="unfinished">Vstup</translation>
+        <translation>Vstup</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="119"/>
         <source>External Input</source>
-        <translation type="unfinished">Externí vstup</translation>
+        <translation>Externí vstup</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="125"/>
         <source>Input Universe</source>
-        <translation type="unfinished">Větev vstupu</translation>
+        <translation>Větev vstupu</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="132"/>
@@ -1074,12 +1100,12 @@ Délka: %3
         <location filename="vcaudiotriggersproperties.ui" line="139"/>
         <source>When toggled, you can click an external button to assign it to this widget.</source>
         <oldsource>When toggled, you can click an external button to assign it to this virtual console button.</oldsource>
-        <translation type="unfinished">Je-li aktivní, bude dostupná volba  externího tlačítka pro přiřazení k řízení tohoto virtuálního tlačítka.</translation>
+        <translation>Je-li aktivní, bude dostupná volba  externího tlačítka pro přiřazení k řízení tohoto virtuálního tlačítka.</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="142"/>
         <source>Auto Detect</source>
-        <translation type="unfinished">Automaticky detekovat</translation>
+        <translation>Automaticky detekovat</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.ui" line="158"/>
@@ -1123,7 +1149,7 @@ Délka: %3
         <location filename="vcaudiotriggersproperties.ui" line="255"/>
         <source>Remove the widget&apos;s keyboard shortcut key</source>
         <oldsource>Remove the button&apos;s keyboard shortcut key</oldsource>
-        <translation type="unfinished">Odebrat zkratkovou klávesu přiřazenou k tlačítku</translation>
+        <translation>Odebrat zkratkovou klávesu přiřazenou k tlačítku</translation>
     </message>
     <message>
         <location filename="vcaudiotriggersproperties.cpp" line="126"/>
@@ -1228,19 +1254,19 @@ Délka: %3
     </message>
     <message>
         <location filename="chasereditor.ui" line="70"/>
-        <location filename="chasereditor.cpp" line="803"/>
+        <location filename="chasereditor.cpp" line="810"/>
         <source>Fade In</source>
         <translation>Zesílení</translation>
     </message>
     <message>
         <location filename="chasereditor.ui" line="75"/>
-        <location filename="chasereditor.cpp" line="805"/>
+        <location filename="chasereditor.cpp" line="812"/>
         <source>Hold</source>
         <translation>Podržet</translation>
     </message>
     <message>
         <location filename="chasereditor.ui" line="80"/>
-        <location filename="chasereditor.cpp" line="804"/>
+        <location filename="chasereditor.cpp" line="811"/>
         <source>Fade Out</source>
         <translation>Zeslabení</translation>
     </message>
@@ -1478,22 +1504,22 @@ Délka: %3
         <translation>Pokoušíte se vložit nekompatibilní Scénu. Operace byla zrušena.</translation>
     </message>
     <message>
-        <location filename="chasereditor.cpp" line="806"/>
+        <location filename="chasereditor.cpp" line="813"/>
         <source>Common Fade In</source>
         <translation>Společné zesílení</translation>
     </message>
     <message>
-        <location filename="chasereditor.cpp" line="807"/>
+        <location filename="chasereditor.cpp" line="814"/>
         <source>Common Fade Out</source>
         <translation>Společné zeslabení</translation>
     </message>
     <message>
-        <location filename="chasereditor.cpp" line="808"/>
+        <location filename="chasereditor.cpp" line="815"/>
         <source>Common Hold</source>
         <translation>Společné pozastavení</translation>
     </message>
     <message>
-        <location filename="chasereditor.cpp" line="824"/>
+        <location filename="chasereditor.cpp" line="831"/>
         <source>Multiple Steps</source>
         <translation>Kroky</translation>
     </message>
@@ -1705,259 +1731,269 @@ Délka: %3
         <translation>Editor EFX </translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="27"/>
+        <location filename="efxeditor.ui" line="34"/>
         <source>General</source>
         <translation>Obecné</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="39"/>
+        <location filename="efxeditor.ui" line="644"/>
         <source>EFX name</source>
         <translation>Název EFX</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="46"/>
+        <location filename="efxeditor.ui" line="20"/>
         <source>The name of the function being edited</source>
         <translation>Název funkce k editaci</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="78"/>
+        <location filename="efxeditor.ui" line="195"/>
         <source>Step</source>
         <translation>Krok</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="83"/>
+        <location filename="efxeditor.ui" line="200"/>
         <source>Fixture</source>
         <translation>Zařízení</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="88"/>
+        <location filename="efxeditor.ui" line="205"/>
         <source>Reverse</source>
         <translation>Zrcadlově</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="93"/>
-        <location filename="efxeditor.ui" line="521"/>
+        <location filename="efxeditor.ui" line="210"/>
+        <location filename="efxeditor.ui" line="508"/>
         <source>Start Offset</source>
         <translation>Posunutí počátku</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="98"/>
+        <location filename="efxeditor.ui" line="215"/>
         <source>Intensity</source>
         <translation>Intenzita</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="194"/>
+        <location filename="efxeditor.ui" line="121"/>
         <source>Fixture order</source>
         <translation>Způsob řízení zařízení</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="200"/>
+        <location filename="efxeditor.ui" line="127"/>
         <source>All fixtures move in parallel</source>
         <translation>Všechna zařízení se pohybují praralelně</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="203"/>
+        <location filename="efxeditor.ui" line="130"/>
         <source>Parallel</source>
         <translation>Paralelně</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="213"/>
+        <location filename="efxeditor.ui" line="140"/>
         <source>The pattern propagates to each fixture in a sequential order</source>
         <translation>Vzor se propaguje do každého zařízení dle pořadí</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="216"/>
+        <location filename="efxeditor.ui" line="143"/>
         <source>Serial</source>
         <translation>Sériově</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="223"/>
+        <location filename="efxeditor.ui" line="150"/>
         <source>Each fixture starts moving immediately with an offset</source>
         <translation>Každé zařízení se začne pohybovat s návazností na posunutí počátku</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="226"/>
+        <location filename="efxeditor.ui" line="153"/>
         <source>Asymmetric</source>
         <translation>Asymetricky</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="237"/>
+        <location filename="efxeditor.ui" line="224"/>
         <source>Movement</source>
         <translation>Pohyb</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="265"/>
+        <location filename="efxeditor.ui" line="252"/>
         <source>Pattern</source>
         <translation>Vzor</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="271"/>
+        <location filename="efxeditor.ui" line="258"/>
         <source>Pattern for moving the mirror/head</source>
         <translation>Vzor pro pohyb zrcada/hlavy</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="281"/>
+        <location filename="efxeditor.ui" line="268"/>
         <source>Parameters</source>
         <translation>Parametry</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="310"/>
+        <location filename="efxeditor.ui" line="297"/>
         <source>Width</source>
         <translation>Šířka</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="317"/>
+        <location filename="efxeditor.ui" line="304"/>
         <source>Value width of the pattern</source>
         <translation>Šířka vzoru</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="330"/>
+        <location filename="efxeditor.ui" line="317"/>
         <source>Height</source>
         <translation>Výška</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="337"/>
+        <location filename="efxeditor.ui" line="324"/>
         <source>Value height of the pattern</source>
         <translation>Výška vzoru</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="350"/>
+        <location filename="efxeditor.ui" line="337"/>
         <source>X offset</source>
         <translation>Posunutí osy X</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="357"/>
+        <location filename="efxeditor.ui" line="344"/>
         <source>Pattern&apos;s center point on the X axis</source>
         <translation>Středový bod vzoru na ose X</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="370"/>
+        <location filename="efxeditor.ui" line="357"/>
         <source>Y offset</source>
         <translation>Posunutí osy Y</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="377"/>
+        <location filename="efxeditor.ui" line="364"/>
         <source>Pattern&apos;s center point on the Y axis</source>
         <translation>Středový bod vzoru na ose Y</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="390"/>
+        <location filename="efxeditor.ui" line="377"/>
         <source>Rotation</source>
         <translation>Rotace</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="397"/>
+        <location filename="efxeditor.ui" line="384"/>
         <source>Rotation of the pattern&apos;s starting point</source>
         <translation>Počáteční bod rozace vzoru</translation>
     </message>
     <message utf8="true">
-        <location filename="efxeditor.ui" line="400"/>
-        <location filename="efxeditor.ui" line="511"/>
+        <location filename="efxeditor.ui" line="387"/>
+        <location filename="efxeditor.ui" line="498"/>
         <source>°</source>
         <translation>°</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="413"/>
+        <location filename="efxeditor.ui" line="400"/>
         <source>X frequency</source>
         <translation>Frekvence osy X</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="423"/>
+        <location filename="efxeditor.ui" line="410"/>
         <source>Lissajous pattern&apos;s X frequency</source>
         <translation>Frekvence oscilace osy X pro Lissajousovy křivky</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="439"/>
+        <location filename="efxeditor.ui" line="426"/>
         <source>Y frequency</source>
         <translation>Frekvence osy Y</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="449"/>
+        <location filename="efxeditor.ui" line="436"/>
         <source>Lissajous pattern&apos;s Y frequency</source>
         <translation>Frekvence oscilace osy Y pro Lissajousovy křivky</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="465"/>
+        <location filename="efxeditor.ui" line="452"/>
         <source>X phase</source>
         <translation>Fáze osy X</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="488"/>
+        <location filename="efxeditor.ui" line="475"/>
         <source>Lissajous pattern&apos;s X phase</source>
         <translation>Fáze oscilace osy X pro Lissajousovy křivky</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="504"/>
+        <location filename="efxeditor.ui" line="491"/>
         <source>Y phase</source>
         <translation>Fáze osy Y</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="290"/>
+        <location filename="efxeditor.ui" line="664"/>
+        <source>Show/Hide speed dial window</source>
+        <translation>Zobrazit/Skrýt okno rychlé volby</translation>
+    </message>
+    <message>
+        <location filename="efxeditor.ui" line="667"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="efxeditor.ui" line="277"/>
         <source>Lissajous pattern&apos;s Y phase</source>
         <translation>Fáze oscilace osy Y pro Lissajousovy křivky</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="531"/>
+        <location filename="efxeditor.ui" line="518"/>
         <source>Relative</source>
-        <translation type="unfinished"></translation>
+        <translation>Relativní</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="541"/>
+        <location filename="efxeditor.ui" line="528"/>
         <source>Direction</source>
         <translation>Směr</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="547"/>
+        <location filename="efxeditor.ui" line="534"/>
         <source>Run the pattern forwards</source>
         <translation>Vzor běží dopředu</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="550"/>
+        <location filename="efxeditor.ui" line="537"/>
         <source>Forward</source>
         <translation>Dopředu</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="560"/>
+        <location filename="efxeditor.ui" line="547"/>
         <source>Run the pattern backwards</source>
         <translation>Vzor běží pozadu</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="563"/>
+        <location filename="efxeditor.ui" line="550"/>
         <source>Backward</source>
         <translation>Pozadu</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="589"/>
+        <location filename="efxeditor.ui" line="576"/>
         <source>Run order</source>
         <translation>Režim běhu</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="595"/>
+        <location filename="efxeditor.ui" line="582"/>
         <source>Run through over and over again</source>
         <translation>Běží v nekonečné smičce</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="598"/>
+        <location filename="efxeditor.ui" line="585"/>
         <source>Loop</source>
         <translation>Smyčka</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="608"/>
+        <location filename="efxeditor.ui" line="595"/>
         <source>Run through once and stop</source>
         <translation>Jednou proběhne a ukončí se</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="611"/>
+        <location filename="efxeditor.ui" line="598"/>
         <source>Single shot</source>
         <translation>Jednorázově</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="618"/>
+        <location filename="efxeditor.ui" line="605"/>
         <source>First run forwards, then backwards, again forwards, etc...</source>
         <translation>Nejprve jede dopředu, pak zpět a opět dopředu, atp...</translation>
     </message>
     <message>
-        <location filename="efxeditor.ui" line="621"/>
+        <location filename="efxeditor.ui" line="608"/>
         <source>Ping pong</source>
         <translation>Kyvadlo</translation>
     </message>
@@ -1972,12 +2008,12 @@ Délka: %3
         <translation>O&amp;testovat běh</translation>
     </message>
     <message>
-        <location filename="efxeditor.cpp" line="644"/>
+        <location filename="efxeditor.cpp" line="678"/>
         <source>Remove fixtures</source>
         <translation>Odebrat zařízení</translation>
     </message>
     <message>
-        <location filename="efxeditor.cpp" line="645"/>
+        <location filename="efxeditor.cpp" line="679"/>
         <source>Do you want to remove the selected fixture(s)?</source>
         <translation>Opravdu si přejete odebrat označená zařízení? </translation>
     </message>
@@ -2185,77 +2221,77 @@ Délka: %3
         <translation>Obecný stmívač</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1157"/>
+        <location filename="fixturemanager.cpp" line="1160"/>
         <source>%1 - Row %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - řádek %2</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1208"/>
+        <location filename="fixturemanager.cpp" line="1222"/>
         <source>Delete Fixtures</source>
         <translation>Smazat zařízení</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1209"/>
+        <location filename="fixturemanager.cpp" line="1223"/>
         <source>Do you want to delete the selected items?</source>
         <translation>Opravdu si přejete SMAZAT zvolené položky? </translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1254"/>
+        <location filename="fixturemanager.cpp" line="1268"/>
         <source>Delete Channels Group</source>
         <translation>Smazat skupinu kanálů</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1255"/>
+        <location filename="fixturemanager.cpp" line="1269"/>
         <source>Do you want to delete the selected groups?</source>
         <translation>Opravdu si přejete SMAZAT zvolené skupiny? </translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1320"/>
+        <location filename="fixturemanager.cpp" line="1334"/>
         <source>Change fixture properties</source>
         <translation>Změnit parametry zařízení</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1357"/>
+        <location filename="fixturemanager.cpp" line="1371"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1358"/>
+        <location filename="fixturemanager.cpp" line="1372"/>
         <source>Please enter a valid address</source>
         <translation>Prosím zadejte platnou adresu</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1434"/>
+        <location filename="fixturemanager.cpp" line="1448"/>
         <source>Ungroup fixtures?</source>
         <translation>Oddělit zařízení ze skupiny?</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1435"/>
+        <location filename="fixturemanager.cpp" line="1449"/>
         <source>Do you want to ungroup the selected fixtures?</source>
         <translation>Opravdu si přejete oddělit zvolená zařízení ze skupiny?</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1550"/>
+        <location filename="fixturemanager.cpp" line="1564"/>
         <source>Import Fixtures List</source>
         <translation>Importovat seznam zařízení</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1555"/>
+        <location filename="fixturemanager.cpp" line="1569"/>
         <source>Export Fixtures List As</source>
         <translation>Exportovat seznam zařízení jako</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1561"/>
+        <location filename="fixturemanager.cpp" line="1575"/>
         <source>Fixtures List (*%1)</source>
         <translation>Seznam zařízení (*%1)</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1563"/>
+        <location filename="fixturemanager.cpp" line="1577"/>
         <source>All Files (*.*)</source>
         <translation>Všechny soubory (*.*)</translation>
     </message>
     <message>
-        <location filename="fixturemanager.cpp" line="1565"/>
+        <location filename="fixturemanager.cpp" line="1579"/>
         <source>All Files (*)</source>
         <translation>Všechny soubory (*)</translation>
     </message>
@@ -2405,7 +2441,7 @@ Délka: %3
     <message>
         <location filename="fixtureselection.ui" line="44"/>
         <source>Universe</source>
-        <translation type="unfinished">Větev</translation>
+        <translation>Větev</translation>
     </message>
     <message>
         <location filename="fixtureselection.ui" line="49"/>
@@ -2455,168 +2491,191 @@ Délka: %3
 <context>
     <name>FunctionManager</name>
     <message>
-        <location filename="functionmanager.cpp" line="232"/>
+        <location filename="functionmanager.cpp" line="236"/>
         <source>New &amp;scene</source>
         <translation>Nová Scéna (CTRL+&amp;s)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="238"/>
+        <location filename="functionmanager.cpp" line="242"/>
         <source>New c&amp;haser</source>
         <translation>Nové Prolínání (CTRL+&amp;h)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="244"/>
+        <location filename="functionmanager.cpp" line="248"/>
         <source>New se&amp;quence</source>
         <translation>Nová Sekvence (CTRL+&amp;q)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="251"/>
+        <location filename="functionmanager.cpp" line="255"/>
         <source>New c&amp;ollection</source>
         <translation>Nová Kolekce(CTRL+&amp;o)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="257"/>
+        <location filename="functionmanager.cpp" line="261"/>
         <source>New E&amp;FX</source>
         <translation>Nový EFX(CTRL+&amp;f)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="263"/>
+        <location filename="functionmanager.cpp" line="267"/>
         <source>New &amp;RGB Matrix</source>
         <translation>Nová RGB šablona (CTRL+&amp;R)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="269"/>
+        <location filename="functionmanager.cpp" line="273"/>
         <source>New scrip&amp;t</source>
         <translation>Nový skript (CTRL+&amp;t)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="275"/>
+        <location filename="functionmanager.cpp" line="279"/>
         <source>New au&amp;dio</source>
         <translation>Nový zvuk (CTRL+&amp;d)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="281"/>
-        <source>New fo&amp;lder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="functionmanager.cpp" line="287"/>
-        <source>Select Startup Function</source>
-        <translation type="unfinished"></translation>
+        <location filename="functionmanager.cpp" line="286"/>
+        <source>New vid&amp;eo</source>
+        <translation>Nové vid&amp;eo</translation>
     </message>
     <message>
         <location filename="functionmanager.cpp" line="292"/>
+        <source>New fo&amp;lder</source>
+        <translation>Nová s&amp;ložka</translation>
+    </message>
+    <message>
+        <location filename="functionmanager.cpp" line="298"/>
+        <source>Select Startup Function</source>
+        <translation>Volba funkce při spuštění</translation>
+    </message>
+    <message>
+        <location filename="functionmanager.cpp" line="303"/>
         <source>Function &amp;Wizard</source>
         <translation>Tvorba funkcí (CTRL+&amp;W)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="299"/>
+        <location filename="functionmanager.cpp" line="310"/>
         <source>&amp;Clone</source>
         <translation>Duplikovat (CTRL+&amp;C)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="305"/>
+        <location filename="functionmanager.cpp" line="316"/>
         <source>&amp;Delete</source>
         <translation>Smazat (CTRL+&amp;D)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="311"/>
+        <location filename="functionmanager.cpp" line="322"/>
         <source>Select &amp;all</source>
         <translation>Označit vše (CTRL+&amp;a)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="350"/>
+        <location filename="functionmanager.cpp" line="364"/>
         <source>New Scene</source>
         <translation>Nová Scéna</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="363"/>
+        <location filename="functionmanager.cpp" line="377"/>
         <source>New Chaser</source>
         <translation>Nové Prolínání</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="386"/>
+        <location filename="functionmanager.cpp" line="400"/>
         <source>New Sequence</source>
         <translation>Nová Sekvence</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="399"/>
+        <location filename="functionmanager.cpp" line="413"/>
         <source>New Collection</source>
         <translation>Nová Kolekce</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="412"/>
+        <location filename="functionmanager.cpp" line="426"/>
         <source>New EFX</source>
         <translation>Nový EFX</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="425"/>
+        <location filename="functionmanager.cpp" line="439"/>
         <source>New RGB Matrix</source>
         <translation>Nový RGB šablona</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="438"/>
+        <location filename="functionmanager.cpp" line="452"/>
         <source>New Script</source>
         <translation>Nový Skript</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="450"/>
+        <location filename="functionmanager.cpp" line="464"/>
+        <location filename="functionmanager.cpp" line="517"/>
         <source>Open Audio File</source>
         <translation>Otevřít soubor zvuku</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="476"/>
+        <location filename="functionmanager.cpp" line="472"/>
         <source>Audio Files (%1)</source>
         <translation>Zvukové soubory (%1)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="478"/>
+        <location filename="functionmanager.cpp" line="474"/>
+        <location filename="functionmanager.cpp" line="527"/>
         <source>All Files (*.*)</source>
         <translation>Všechny soubory (*.*)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="480"/>
+        <location filename="functionmanager.cpp" line="476"/>
+        <location filename="functionmanager.cpp" line="529"/>
         <source>All Files (*)</source>
         <translation>Všechny soubory (*)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="502"/>
+        <location filename="functionmanager.cpp" line="498"/>
         <source>Unsupported audio file</source>
         <translation>Nepodporovaný soubor zvuku</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="502"/>
+        <location filename="functionmanager.cpp" line="498"/>
         <source>This audio file cannot be played with QLC+. Sorry.</source>
         <translation>Tento soubor zvuku nemůže být přehrán v QLC+. Je nám to moc líto.</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="562"/>
-        <source>Do you want to DELETE folder:</source>
-        <oldsource>Do you want to DELETE foler:</oldsource>
-        <translation type="unfinished"></translation>
+        <location filename="functionmanager.cpp" line="525"/>
+        <source>Video Files (%1)</source>
+        <translation>Video soubory (%1)</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="564"/>
+        <location filename="functionmanager.cpp" line="551"/>
+        <source>Unsupported video file</source>
+        <translation>Nepodporovaný soubor videa</translation>
+    </message>
+    <message>
+        <location filename="functionmanager.cpp" line="551"/>
+        <source>This video file cannot be played with QLC+. Sorry.</source>
+        <translation>Tento soubor videa nemůže být přehrán v QLC+. Je nám to moc líto.</translation>
+    </message>
+    <message>
+        <location filename="functionmanager.cpp" line="612"/>
+        <source>Do you want to DELETE folder:</source>
+        <oldsource>Do you want to DELETE foler:</oldsource>
+        <translation>Opravdu si přejete si SMAZAT složku:</translation>
+    </message>
+    <message>
+        <location filename="functionmanager.cpp" line="614"/>
         <source>Do you want to DELETE functions:</source>
         <translation>Opravdu si přejete SMAZAT funkce: </translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="576"/>
+        <location filename="functionmanager.cpp" line="626"/>
         <source>(This will also DELETE: </source>
-        <translation type="unfinished"></translation>
+        <translation>Tato operace také VYMAŽE:</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="588"/>
+        <location filename="functionmanager.cpp" line="638"/>
         <source>Delete Functions</source>
         <translation>Smazat funkce</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="694"/>
+        <location filename="functionmanager.cpp" line="744"/>
         <source>Function</source>
         <translation>Funkce</translation>
     </message>
     <message>
-        <location filename="functionmanager.cpp" line="807"/>
+        <location filename="functionmanager.cpp" line="861"/>
         <source> (Copy)</source>
         <translation>(kopie)</translation>
     </message>
@@ -2631,12 +2690,12 @@ Délka: %3
     <message>
         <location filename="functionselection.ui" line="22"/>
         <source>All functions</source>
-        <translation type="unfinished"></translation>
+        <translation>Všechny funkce</translation>
     </message>
     <message>
         <location filename="functionselection.ui" line="32"/>
         <source>Running functions</source>
-        <translation type="unfinished"></translation>
+        <translation>Běžící funkce</translation>
     </message>
     <message>
         <location filename="functionselection.ui" line="74"/>
@@ -2677,13 +2736,13 @@ Délka: %3
         <location filename="functionselection.ui" line="110"/>
         <source>Display RGB Matrices in the list</source>
         <oldsource>Display RGB Matrixes in the list</oldsource>
-        <translation type="unfinished">Zobrazit RGB šablony v seznamu</translation>
+        <translation>Zobrazit RGB šablony v seznamu</translation>
     </message>
     <message>
         <location filename="functionselection.ui" line="113"/>
         <source>RGB matrices</source>
         <oldsource>RGB matrixes</oldsource>
-        <translation type="unfinished">RGB šablony</translation>
+        <translation>RGB šablony</translation>
     </message>
     <message>
         <location filename="functionselection.ui" line="120"/>
@@ -2716,14 +2775,19 @@ Délka: %3
         <translation>Zvuky</translation>
     </message>
     <message>
-        <location filename="functionselection.cpp" line="70"/>
-        <source>Functions</source>
-        <translation type="unfinished">Funkce</translation>
+        <location filename="functionselection.ui" line="154"/>
+        <source>Video</source>
+        <translation>Video</translation>
     </message>
     <message>
-        <location filename="functionselection.cpp" line="264"/>
+        <location filename="functionselection.cpp" line="75"/>
+        <source>Functions</source>
+        <translation>Funkce</translation>
+    </message>
+    <message>
+        <location filename="functionselection.cpp" line="285"/>
         <source>&lt;No function&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;Žádná funkce&gt;</translation>
     </message>
 </context>
 <context>
@@ -2736,22 +2800,22 @@ Délka: %3
     <message>
         <location filename="functionwizard.ui" line="38"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Další</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="52"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="66"/>
         <source>Cancel</source>
-        <translation type="unfinished">Zrušit</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="86"/>
         <source>Introduction</source>
-        <translation type="unfinished"></translation>
+        <translation>Úvod</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="95"/>
@@ -2787,7 +2851,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="functionwizard.ui" line="247"/>
         <source>Functions</source>
-        <translation type="unfinished">Funkce</translation>
+        <translation>Funkce</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="254"/>
@@ -2802,7 +2866,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="functionwizard.ui" line="268"/>
         <source>Odd/Even</source>
-        <translation type="unfinished"></translation>
+        <translation>Sudé/liché</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="288"/>
@@ -2816,7 +2880,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="functionwizard.ui" line="300"/>
         <source>Virtual Console</source>
-        <translation type="unfinished">Virtuální pracoviště</translation>
+        <translation>Virtuální pracoviště</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="318"/>
@@ -2830,7 +2894,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="functionwizard.ui" line="330"/>
         <source>Widgets</source>
-        <translation type="unfinished">Ovladače</translation>
+        <translation>Ovladače</translation>
     </message>
     <message>
         <location filename="functionwizard.ui" line="129"/>
@@ -2897,27 +2961,27 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>GrandMasterSlider</name>
     <message>
-        <location filename="grandmasterslider.cpp" line="64"/>
+        <location filename="grandmasterslider.cpp" line="88"/>
         <source>GM</source>
         <translation>GM</translation>
     </message>
     <message>
-        <location filename="grandmasterslider.cpp" line="118"/>
+        <location filename="grandmasterslider.cpp" line="142"/>
         <source>Grand Master &lt;B&gt;limits&lt;/B&gt; the maximum value of</source>
         <translation>GM -Hlavní šavle  &lt;B&gt;nastaví&lt;/B&gt; omezení maximální úrovně</translation>
     </message>
     <message>
-        <location filename="grandmasterslider.cpp" line="121"/>
+        <location filename="grandmasterslider.cpp" line="145"/>
         <source>Grand Master &lt;B&gt;reduces&lt;/B&gt; the current value of</source>
         <translation>GM -Hlavní šavle  &lt;B&gt;reguluje&lt;/B&gt; aktuální úroveň</translation>
     </message>
     <message>
-        <location filename="grandmasterslider.cpp" line="130"/>
+        <location filename="grandmasterslider.cpp" line="154"/>
         <source>intensity channels</source>
         <translation>intenzity kanálů</translation>
     </message>
     <message>
-        <location filename="grandmasterslider.cpp" line="133"/>
+        <location filename="grandmasterslider.cpp" line="157"/>
         <source>all channels</source>
         <translation>všech kanálů</translation>
     </message>
@@ -2955,18 +3019,18 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="inputoutputmanager.cpp" line="84"/>
         <source>Add U&amp;niverse</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat větev</translation>
     </message>
     <message>
         <location filename="inputoutputmanager.cpp" line="90"/>
         <source>&amp;Delete Universe</source>
         <oldsource>Universe</oldsource>
-        <translation type="unfinished">Větev</translation>
+        <translation>Zmazat větev</translation>
     </message>
     <message>
         <location filename="inputoutputmanager.cpp" line="109"/>
         <source>Universe name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Název větve</translation>
     </message>
     <message>
         <location filename="inputoutputmanager.cpp" line="119"/>
@@ -2974,24 +3038,24 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="inputoutputmanager.cpp" line="224"/>
-        <location filename="inputoutputmanager.cpp" line="387"/>
+        <location filename="inputoutputmanager.cpp" line="227"/>
+        <location filename="inputoutputmanager.cpp" line="390"/>
         <source>Universe %1</source>
-        <translation type="unfinished">Větev %1</translation>
+        <translation>Větev %1</translation>
     </message>
     <message>
-        <location filename="inputoutputmanager.cpp" line="345"/>
-        <location filename="inputoutputmanager.cpp" line="364"/>
+        <location filename="inputoutputmanager.cpp" line="348"/>
+        <location filename="inputoutputmanager.cpp" line="367"/>
         <source>Delete Universe</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmazat větev</translation>
     </message>
     <message>
-        <location filename="inputoutputmanager.cpp" line="346"/>
+        <location filename="inputoutputmanager.cpp" line="349"/>
         <source>The universe you are trying to delete is patched. Are you sure you want to delete it ?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="inputoutputmanager.cpp" line="365"/>
+        <location filename="inputoutputmanager.cpp" line="368"/>
         <source>There are some fixtures using the universe you are trying to delete. Are you sure you want to delete it ?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3060,84 +3124,84 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="inputoutputpatcheditor.ui" line="221"/>
         <source>Audio</source>
-        <translation type="unfinished">Zvuky</translation>
+        <translation>Zvuky</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="395"/>
-        <location filename="inputoutputpatcheditor.cpp" line="413"/>
+        <location filename="inputoutputpatcheditor.cpp" line="400"/>
+        <location filename="inputoutputpatcheditor.cpp" line="418"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="396"/>
-        <location filename="inputoutputpatcheditor.cpp" line="414"/>
+        <location filename="inputoutputpatcheditor.cpp" line="401"/>
+        <location filename="inputoutputpatcheditor.cpp" line="419"/>
         <source>Output line already assigned</source>
         <translation>Výstupní linka již byla přiřazena</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="636"/>
-        <location filename="inputoutputpatcheditor.cpp" line="770"/>
+        <location filename="inputoutputpatcheditor.cpp" line="641"/>
+        <location filename="inputoutputpatcheditor.cpp" line="775"/>
         <source>Existing Input Profile</source>
         <translation>Existující profil vstupu</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="637"/>
-        <location filename="inputoutputpatcheditor.cpp" line="771"/>
+        <location filename="inputoutputpatcheditor.cpp" line="642"/>
+        <location filename="inputoutputpatcheditor.cpp" line="776"/>
         <source>An input profile at %1 already exists. Do you wish to overwrite it?</source>
         <translation>Profil vstupu na %1 již existuje. Opravdu si přejete jej přepsat a nahradit ?</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="646"/>
-        <location filename="inputoutputpatcheditor.cpp" line="780"/>
+        <location filename="inputoutputpatcheditor.cpp" line="651"/>
+        <location filename="inputoutputpatcheditor.cpp" line="785"/>
         <source>Save Input Profile</source>
         <translation>Uložit profil vstupu</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="647"/>
-        <location filename="inputoutputpatcheditor.cpp" line="781"/>
+        <location filename="inputoutputpatcheditor.cpp" line="652"/>
+        <location filename="inputoutputpatcheditor.cpp" line="786"/>
         <source>Input Profiles (*.qxi)</source>
         <translation>Profily vstupu (*.qxi)</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="660"/>
-        <location filename="inputoutputpatcheditor.cpp" line="797"/>
+        <location filename="inputoutputpatcheditor.cpp" line="665"/>
+        <location filename="inputoutputpatcheditor.cpp" line="802"/>
         <source>Saving failed</source>
         <translation>Uložení se nezdařilo</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="661"/>
+        <location filename="inputoutputpatcheditor.cpp" line="666"/>
         <source>Unable to save the profile to %1</source>
         <translation>Nelze uložit profil do %1</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="698"/>
+        <location filename="inputoutputpatcheditor.cpp" line="703"/>
         <source>Delete profile</source>
         <translation>Smazat profil</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="699"/>
+        <location filename="inputoutputpatcheditor.cpp" line="704"/>
         <source>Do you wish to permanently delete profile &quot;%1&quot;?</source>
         <translation>Opravdu si přejete nenávratně SMAZAT profil  &quot;%1&quot;?</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="727"/>
+        <location filename="inputoutputpatcheditor.cpp" line="732"/>
         <source>File deletion failed</source>
         <translation>Smazání souboru se nezdařilo</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="728"/>
+        <location filename="inputoutputpatcheditor.cpp" line="733"/>
         <source>Unable to delete file %1</source>
         <translation>Nelze smazat soubor %1</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="798"/>
+        <location filename="inputoutputpatcheditor.cpp" line="803"/>
         <source>Unable to save %1 to %2</source>
         <translation>Nelze uložit %1 do %2</translation>
     </message>
     <message>
-        <location filename="inputoutputpatcheditor.cpp" line="827"/>
+        <location filename="inputoutputpatcheditor.cpp" line="835"/>
         <source>Default device</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardní zařízení</translation>
     </message>
 </context>
 <context>
@@ -3291,88 +3355,135 @@ Note that the wizard cannot tell the difference between a knob and a slider so y
 <context>
     <name>Monitor</name>
     <message>
-        <location filename="monitor.cpp" line="174"/>
+        <location filename="monitor.cpp" line="194"/>
         <source>Fixture Monitor</source>
         <translation>Sledování zařízení</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="221"/>
+        <location filename="monitor.cpp" line="226"/>
+        <source>2D View</source>
+        <translation>2D pohled</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="233"/>
         <source>Font</source>
         <translation>Styl písma</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="230"/>
+        <location filename="monitor.cpp" line="242"/>
         <source>DMX Channels</source>
         <translation>DMX kanály</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="231"/>
+        <location filename="monitor.cpp" line="243"/>
         <source>Show absolute DMX channel numbers</source>
         <translation>Zobrazit absolutní číslo DMX kanálu</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="241"/>
+        <location filename="monitor.cpp" line="253"/>
         <source>Relative Channels</source>
         <translation>Relativní kanály</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="242"/>
+        <location filename="monitor.cpp" line="254"/>
         <source>Show channel numbers relative to fixture</source>
         <translation>Zobrazit číslo kanálu relativně k zařízení</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="258"/>
+        <location filename="monitor.cpp" line="270"/>
         <source>DMX Values</source>
         <translation>DMX hodnoty</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="259"/>
+        <location filename="monitor.cpp" line="271"/>
         <source>Show DMX values 0-255</source>
         <translation>Zobrazit hodnoty DMX 0-255</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="270"/>
+        <location filename="monitor.cpp" line="282"/>
         <source>Percent Values</source>
         <translation>Procentuální hodnoty</translation>
     </message>
     <message>
-        <location filename="monitor.cpp" line="271"/>
+        <location filename="monitor.cpp" line="283"/>
         <source>Show percentage values 0-100%</source>
         <translation>Zobrazit procentuální hodnoty 0-100%</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="294"/>
+        <source>All universes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="316"/>
+        <source>DMX View</source>
+        <translation>DMX hodnoty</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="322"/>
+        <source>Size:</source>
+        <translation>Velikost:</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="346"/>
+        <source>Meters</source>
+        <translation>metrů</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="347"/>
+        <source>Feet</source>
+        <translation>stop</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="356"/>
+        <source>Add fixture</source>
+        <translation>Přidat zařízení</translation>
+    </message>
+    <message>
+        <location filename="monitor.cpp" line="358"/>
+        <source>Remove fixture</source>
+        <translation>Odebrat zařízení</translation>
     </message>
 </context>
 <context>
     <name>MultiTrackView</name>
     <message>
-        <location filename="multitrackview.cpp" line="261"/>
+        <location filename="multitrackview.cpp" line="311"/>
         <source>Do you want to DELETE sequence:</source>
         <translation>Opravdu si přejete SMAZAT sekvenci: </translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="264"/>
-        <location filename="multitrackview.cpp" line="284"/>
-        <location filename="multitrackview.cpp" line="318"/>
+        <location filename="multitrackview.cpp" line="314"/>
+        <location filename="multitrackview.cpp" line="334"/>
+        <location filename="multitrackview.cpp" line="356"/>
+        <location filename="multitrackview.cpp" line="391"/>
         <source>Delete Functions</source>
         <translation>Smazat funkce</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="280"/>
+        <location filename="multitrackview.cpp" line="330"/>
         <source>Do you want to DELETE audio (the source file will NOT be removed):</source>
         <translation>Přejete si SMAZAT zvuk (zdrojový soubor NEBUDE odebrán):</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="305"/>
+        <location filename="multitrackview.cpp" line="352"/>
+        <source>Do you want to DELETE video (the source file will NOT be removed):</source>
+        <translation>Přejete si SMAZAT video (zdrojový soubor NEBUDE odebrán):</translation>
+    </message>
+    <message>
+        <location filename="multitrackview.cpp" line="378"/>
         <source>Do you want to DELETE scene:</source>
         <translation>Opravdu si přejete si SMAZAT scénu:</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="308"/>
+        <location filename="multitrackview.cpp" line="381"/>
         <source>This operation will also DELETE:</source>
         <translation>Tato operace také VYMAŽE:</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="404"/>
-        <location filename="multitrackview.cpp" line="414"/>
+        <location filename="multitrackview.cpp" line="488"/>
+        <location filename="multitrackview.cpp" line="498"/>
+        <location filename="multitrackview.cpp" line="509"/>
         <source>Name: %1
 Start time: %2
 Duration: %3
@@ -3383,14 +3494,19 @@ Délka: %3
 %4</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="408"/>
+        <location filename="multitrackview.cpp" line="492"/>
         <source>Click to move this sequence across the timeline</source>
         <translation>Klikněte pro přesunutí této sekvence na časové ose</translation>
     </message>
     <message>
-        <location filename="multitrackview.cpp" line="418"/>
+        <location filename="multitrackview.cpp" line="502"/>
         <source>Click to move this audio across the timeline</source>
         <translation>Klikněte pro přesunutí tohoto zvuku na časové ose</translation>
+    </message>
+    <message>
+        <location filename="multitrackview.cpp" line="513"/>
+        <source>Click to move this video across the timeline</source>
+        <translation>Klikněte pro přesunutí tohoto videa na časové ose</translation>
     </message>
 </context>
 <context>
@@ -3399,69 +3515,69 @@ Délka: %3
         <location filename="palettegenerator.cpp" line="98"/>
         <source>Primary colours</source>
         <oldsource>Primary colors</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Základní barvy</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="99"/>
         <source>16 Colours</source>
         <oldsource>16 Colors</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>16 barev</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="100"/>
         <source>Shutter macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Makra pro uzávěrku</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="101"/>
         <source>Gobo macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Makra pro goba</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="102"/>
         <source>Colour macros</source>
         <oldsource>Color macros</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Makra pro barvy</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="103"/>
         <source>Animations</source>
-        <translation type="unfinished"></translation>
+        <translation>Animace</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="106"/>
         <source>Unknown</source>
-        <translation type="unfinished">Neznámý</translation>
+        <translation>Neznámý</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="255"/>
         <source>%1 - %2 (Even)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - %2 (sudá)</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="256"/>
         <source>%1 - %2 (Odd)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - %2 (lichá)</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="280"/>
         <source>Black</source>
-        <translation type="unfinished"></translation>
+        <translation>Černá</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="280"/>
         <source>Dark Blue</source>
-        <translation type="unfinished"></translation>
+        <translation>Tmavěmodrá</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="280"/>
         <source>Blue</source>
-        <translation type="unfinished"></translation>
+        <translation>Modrá</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="280"/>
         <source>Dark Green</source>
-        <translation type="unfinished"></translation>
+        <translation>Tmavězelená</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="281"/>
@@ -3471,7 +3587,7 @@ Délka: %3
     <message>
         <location filename="palettegenerator.cpp" line="281"/>
         <source>Green</source>
-        <translation type="unfinished"></translation>
+        <translation>Zelená</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="281"/>
@@ -3521,7 +3637,7 @@ Délka: %3
     <message>
         <location filename="palettegenerator.cpp" line="283"/>
         <source>White</source>
-        <translation type="unfinished"></translation>
+        <translation>Bílá</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="335"/>
@@ -3531,12 +3647,12 @@ Délka: %3
     <message>
         <location filename="palettegenerator.cpp" line="339"/>
         <source>%1 %2 - %3 (Even)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 - %2 (sudá) {1 %2 ?} {3 ?}</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="340"/>
         <source>%1 %2 - %3 (Odd)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%1 - %2 (lichá) {1 %2 ?} {3 ?}</translation>
     </message>
     <message>
         <location filename="palettegenerator.cpp" line="402"/>
@@ -3657,7 +3773,7 @@ Délka: %3
     <message>
         <location filename="rgbmatrixeditor.ui" line="398"/>
         <source>Save this matrix to a sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulož tuto RGB šablónu ako sekvenci</translation>
     </message>
     <message>
         <location filename="rgbmatrixeditor.ui" line="424"/>
@@ -3708,7 +3824,7 @@ Délka: %3
     <message>
         <location filename="rgbmatrixeditor.ui" line="122"/>
         <source>Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Obrázek</translation>
     </message>
     <message>
         <location filename="rgbmatrixeditor.ui" line="161"/>
@@ -3778,13 +3894,13 @@ Délka: %3
     <message>
         <location filename="rgbmatrixeditor.ui" line="41"/>
         <source>Matrix start colour</source>
-        <translation type="unfinished"></translation>
+        <translation>Počáteční barva</translation>
     </message>
     <message>
         <location filename="rgbmatrixeditor.ui" line="54"/>
         <source>Matrix end colour</source>
         <oldsource>Matrix end color</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Konečná barva</translation>
     </message>
     <message>
         <location filename="rgbmatrixeditor.ui" line="243"/>
@@ -3809,7 +3925,7 @@ Délka: %3
     <message>
         <location filename="rgbmatrixeditor.ui" line="378"/>
         <source>Show/Hide speed dial window</source>
-        <translation type="unfinished">Zobrazit/Skrýt okno rychlé volby</translation>
+        <translation>Zobrazit/Skrýt okno rychlostí</translation>
     </message>
     <message>
         <location filename="rgbmatrixeditor.ui" line="333"/>
@@ -3822,19 +3938,19 @@ Délka: %3
         <translation>Otestovat běh</translation>
     </message>
     <message>
-        <location filename="rgbmatrixeditor.cpp" line="247"/>
+        <location filename="rgbmatrixeditor.cpp" line="249"/>
         <source>None</source>
         <translation>Nic</translation>
     </message>
     <message>
-        <location filename="rgbmatrixeditor.cpp" line="323"/>
+        <location filename="rgbmatrixeditor.cpp" line="325"/>
         <source>No fixture group to control</source>
         <translation>Žádná skupina zařízení k ovládání</translation>
     </message>
     <message>
-        <location filename="rgbmatrixeditor.cpp" line="589"/>
+        <location filename="rgbmatrixeditor.cpp" line="596"/>
         <source>Select image</source>
-        <translation type="unfinished"></translation>
+        <translation>Volba obrázku</translation>
     </message>
 </context>
 <context>
@@ -3877,7 +3993,7 @@ Délka: %3
         <location filename="sceneeditor.ui" line="152"/>
         <source>Fixtures used in this scene</source>
         <oldsource>Name of this scene</oldsource>
-        <translation type="unfinished">Název této scény</translation>
+        <translation>Zařízení použité v této scéně</translation>
     </message>
     <message>
         <location filename="sceneeditor.ui" line="160"/>
@@ -3967,7 +4083,7 @@ Délka: %3
     <message>
         <location filename="sceneeditor.cpp" line="218"/>
         <source>Scene name:</source>
-        <translation type="unfinished">Název Scény:</translation>
+        <translation>Název scény:</translation>
     </message>
     <message>
         <location filename="sceneeditor.cpp" line="688"/>
@@ -3976,24 +4092,24 @@ Délka: %3
         <translation>Všechna zařízení</translation>
     </message>
     <message>
-        <location filename="sceneeditor.cpp" line="943"/>
-        <location filename="sceneeditor.cpp" line="944"/>
+        <location filename="sceneeditor.cpp" line="948"/>
+        <location filename="sceneeditor.cpp" line="949"/>
         <source>Generic</source>
         <translation>Obecný</translation>
     </message>
     <message>
-        <location filename="sceneeditor.cpp" line="1012"/>
+        <location filename="sceneeditor.cpp" line="1017"/>
         <source>Remove fixtures</source>
         <translation>Odebrat zařízení</translation>
     </message>
     <message>
-        <location filename="sceneeditor.cpp" line="1013"/>
+        <location filename="sceneeditor.cpp" line="1018"/>
         <source>Do you want to remove the selected fixture(s)?</source>
         <translation>Opravdu si přejete odebrat označená zařízení? </translation>
     </message>
     <message>
-        <location filename="sceneeditor.cpp" line="1164"/>
-        <location filename="sceneeditor.cpp" line="1165"/>
+        <location filename="sceneeditor.cpp" line="1169"/>
+        <location filename="sceneeditor.cpp" line="1170"/>
         <source>Channels Groups</source>
         <translation>Skupiny kanálů</translation>
     </message>
@@ -4207,151 +4323,180 @@ Délka: %3
 <context>
     <name>ShowManager</name>
     <message>
-        <location filename="showmanager.cpp" line="175"/>
+        <location filename="showmanager.cpp" line="180"/>
         <source>New s&amp;how</source>
         <translation>Nové Představeníí (CTRL+&amp;h)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="181"/>
+        <location filename="showmanager.cpp" line="186"/>
         <source>New &amp;track</source>
         <translation>Nový stopa (CTRL+&amp;t)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="187"/>
+        <location filename="showmanager.cpp" line="192"/>
         <source>New s&amp;equence</source>
         <translation>Nová Sekvence (CTRL+&amp;e)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="193"/>
+        <location filename="showmanager.cpp" line="198"/>
         <source>New &amp;audio</source>
         <translation>Nový zvuk (CTRL+&amp;a)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="199"/>
+        <location filename="showmanager.cpp" line="205"/>
+        <source>New vi&amp;deo</source>
+        <translation>Nové vi&amp;deo</translation>
+    </message>
+    <message>
+        <location filename="showmanager.cpp" line="212"/>
         <source>&amp;Copy</source>
         <translation>Kopírovat (CTRL+&amp;C)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="206"/>
+        <location filename="showmanager.cpp" line="219"/>
         <source>&amp;Paste</source>
         <translation>Vložit (CTRL+&amp;P)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="212"/>
+        <location filename="showmanager.cpp" line="226"/>
         <source>&amp;Delete</source>
         <translation>Smazat (CTRL+&amp;D)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="219"/>
+        <location filename="showmanager.cpp" line="233"/>
         <source>Change Co&amp;lor</source>
         <translation>Změnit Barvu (CTRL+&amp;L)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="226"/>
+        <location filename="showmanager.cpp" line="240"/>
         <source>Snap to &amp;Grid</source>
         <translation>Přichytit k mřížce (CTRL+&amp;G)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="233"/>
+        <location filename="showmanager.cpp" line="247"/>
         <source>St&amp;op</source>
         <translation>Zastavit (CTRL+&amp;O)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="239"/>
+        <location filename="showmanager.cpp" line="253"/>
         <source>&amp;Play</source>
         <translation>Přehrát (CTRL+&amp;P)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="295"/>
+        <location filename="showmanager.cpp" line="312"/>
         <source>Time division:</source>
         <translation>Časový dělič:</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="300"/>
+        <location filename="showmanager.cpp" line="317"/>
         <source>Time</source>
         <translation>Čas</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="470"/>
+        <location filename="showmanager.cpp" line="490"/>
         <source>New Show</source>
         <translation>Nové Představení</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="471"/>
+        <location filename="showmanager.cpp" line="491"/>
         <source>Show name setup</source>
         <translation>Nastavení názvu představení</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="472"/>
+        <location filename="showmanager.cpp" line="492"/>
         <source>Show name:</source>
         <translation>Název představení:</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="518"/>
+        <location filename="showmanager.cpp" line="538"/>
         <source>New Scene</source>
         <translation>Nová Scéna</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="569"/>
-        <location filename="showmanager.cpp" line="605"/>
+        <location filename="showmanager.cpp" line="589"/>
+        <location filename="showmanager.cpp" line="628"/>
         <source>New Sequence</source>
         <translation>Nová Sekvence</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="593"/>
-        <location filename="showmanager.cpp" line="678"/>
+        <location filename="showmanager.cpp" line="616"/>
+        <location filename="showmanager.cpp" line="684"/>
+        <location filename="showmanager.cpp" line="745"/>
         <source>Overlapping error</source>
         <translation>Chyba překrývání</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="593"/>
-        <location filename="showmanager.cpp" line="678"/>
+        <location filename="showmanager.cpp" line="616"/>
+        <location filename="showmanager.cpp" line="684"/>
+        <location filename="showmanager.cpp" line="745"/>
         <source>Overlapping not allowed. Operation cancelled.</source>
         <translation>Překrývání není možné. Operace zrušena.</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="619"/>
+        <location filename="showmanager.cpp" line="642"/>
         <source>Open Audio File</source>
         <translation>Otevřít soubor zvuku</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="645"/>
+        <location filename="showmanager.cpp" line="651"/>
         <source>Audio Files (%1)</source>
         <translation>Zvukové soubory (%1)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="647"/>
+        <location filename="showmanager.cpp" line="653"/>
+        <location filename="showmanager.cpp" line="714"/>
         <source>All Files (*.*)</source>
         <translation>Všechny soubory (*.*)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="649"/>
+        <location filename="showmanager.cpp" line="655"/>
+        <location filename="showmanager.cpp" line="716"/>
         <source>All Files (*)</source>
         <translation>Všechny soubory (*)</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="671"/>
+        <location filename="showmanager.cpp" line="677"/>
         <source>Unsupported audio file</source>
         <translation>Nepodporovaný soubor zvuku</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="671"/>
+        <location filename="showmanager.cpp" line="677"/>
         <source>This audio file cannot be played with QLC+. Sorry.</source>
         <translation>Tento soubor zvuku nemůže být přehrán v QLC+. Je nám to moc líto.</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="739"/>
-        <location filename="showmanager.cpp" line="761"/>
+        <location filename="showmanager.cpp" line="703"/>
+        <source>Open Video File</source>
+        <translation>Otevřít soubor videa</translation>
+    </message>
+    <message>
+        <location filename="showmanager.cpp" line="712"/>
+        <source>Video Files (%1)</source>
+        <translation>Video soubory (%1)</translation>
+    </message>
+    <message>
+        <location filename="showmanager.cpp" line="738"/>
+        <source>Unsupported video file</source>
+        <translation>Nepodporovaný soubor videa</translation>
+    </message>
+    <message>
+        <location filename="showmanager.cpp" line="738"/>
+        <source>This video file cannot be played with QLC+. Sorry.</source>
+        <translation>Tento soubor videa nemůže být přehrán v QLC+. Je nám to moc líto.</translation>
+    </message>
+    <message>
+        <location filename="showmanager.cpp" line="822"/>
+        <location filename="showmanager.cpp" line="844"/>
         <source>Paste error</source>
         <translation>Chyba vložení</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="739"/>
+        <location filename="showmanager.cpp" line="822"/>
         <source>Overlapping paste not allowed. Operation cancelled.</source>
         <translation>Překrývání není možné. Operace zrušena.</translation>
     </message>
     <message>
-        <location filename="showmanager.cpp" line="761"/>
+        <location filename="showmanager.cpp" line="844"/>
         <source>Trying to paste on an incompatible Scene. Operation cancelled.</source>
         <translation>Pokoušíte se vložit nekompatibilní Scénu. Operace byla zrušena.</translation>
     </message>
@@ -4499,7 +4644,7 @@ Délka: %3
     <message>
         <location filename="speeddial.cpp" line="143"/>
         <source>Tap</source>
-        <translation>Ťuknout(TAP)</translation>
+        <translation>Ťuknout (TAP)</translation>
     </message>
 </context>
 <context>
@@ -4538,22 +4683,22 @@ Délka: %3
     <message>
         <location filename="universeitemwidget.cpp" line="86"/>
         <source>Input:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vstup:</translation>
     </message>
     <message>
         <location filename="universeitemwidget.cpp" line="87"/>
         <source>Profile:</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil:</translation>
     </message>
     <message>
         <location filename="universeitemwidget.cpp" line="88"/>
         <source>Output:</source>
-        <translation type="unfinished"></translation>
+        <translation>Výstup:</translation>
     </message>
     <message>
         <location filename="universeitemwidget.cpp" line="89"/>
         <source>Feedback:</source>
-        <translation type="unfinished"></translation>
+        <translation>Odezva:</translation>
     </message>
     <message>
         <location filename="universeitemwidget.cpp" line="106"/>
@@ -4561,18 +4706,18 @@ Délka: %3
         <location filename="universeitemwidget.cpp" line="110"/>
         <location filename="universeitemwidget.cpp" line="112"/>
         <source>None</source>
-        <translation type="unfinished">Nic</translation>
+        <translation>Nic</translation>
     </message>
 </context>
 <context>
     <name>VCAudioTriggers</name>
     <message>
-        <location filename="vcaudiotriggers.cpp" line="150"/>
+        <location filename="vcaudiotriggers.cpp" line="159"/>
         <source>Audio open error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="vcaudiotriggers.cpp" line="151"/>
+        <location filename="vcaudiotriggers.cpp" line="160"/>
         <source>An error occurred while initializing the selected audio device. Please review your audio input settings.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4793,57 +4938,57 @@ Délka: %3
     <message>
         <location filename="vcclockproperties.ui" line="14"/>
         <source>Clock properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlastnosti hodin</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="24"/>
         <source>Clock type</source>
-        <translation type="unfinished"></translation>
+        <translation>Typ hodin</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="30"/>
         <source>Stopwatch</source>
-        <translation type="unfinished"></translation>
+        <translation>Stopky</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="37"/>
         <source>h</source>
-        <translation type="unfinished"></translation>
+        <translation>h</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="47"/>
         <source>Countdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Odečítání</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="54"/>
         <source>m</source>
-        <translation type="unfinished"></translation>
+        <translation>m</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="64"/>
         <source>s</source>
-        <translation type="unfinished">s</translation>
+        <translation>s</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="74"/>
         <source>Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>Hodiny</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="87"/>
         <source>Schedule</source>
-        <translation type="unfinished"></translation>
+        <translation>Naplánované funkce</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="153"/>
         <source>Function</source>
-        <translation type="unfinished">Funkce</translation>
+        <translation>Funkce</translation>
     </message>
     <message>
         <location filename="vcclockproperties.ui" line="158"/>
         <source>Time</source>
-        <translation type="unfinished">Čas</translation>
+        <translation>Čas</translation>
     </message>
 </context>
 <context>
@@ -5167,7 +5312,7 @@ Délka: %3
     <message>
         <location filename="vcframeproperties.ui" line="38"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vzhled</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="50"/>
@@ -5187,22 +5332,22 @@ Délka: %3
     <message>
         <location filename="vcframeproperties.ui" line="97"/>
         <source>Pages</source>
-        <translation type="unfinished"></translation>
+        <translation>Stránky</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="103"/>
         <source>Enable</source>
-        <translation type="unfinished">Zapnout</translation>
+        <translation>Zapnout</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="112"/>
         <source>Clone first page widgets</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopírovat ovladače z první stránky</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="125"/>
         <source>External Input - Next page</source>
-        <translation type="unfinished"></translation>
+        <translation>Externí vstup - další stránka</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="131"/>
@@ -5214,7 +5359,7 @@ Délka: %3
         <location filename="vcframeproperties.ui" line="138"/>
         <location filename="vcframeproperties.ui" line="246"/>
         <source>The input universe that sends data to this widget</source>
-        <translation type="unfinished"></translation>
+        <translation>Větev vstupů, která bude odesílat data pro tento ovladač</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="148"/>
@@ -5226,13 +5371,13 @@ Délka: %3
         <location filename="vcframeproperties.ui" line="155"/>
         <location filename="vcframeproperties.ui" line="263"/>
         <source>The particular input channel within the input universe that sends data to this widget</source>
-        <translation type="unfinished"></translation>
+        <translation>Kanál větve vstupů, který bude odesílat data pro tento ovladač</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="165"/>
         <location filename="vcframeproperties.ui" line="216"/>
         <source>Choose an external input universe &amp; channel that this widget should listen to</source>
-        <translation type="unfinished">Zvolte větev  externího vstupu &amp; kanál, který by měl tento ovladač řídit</translation>
+        <translation>Zvolte větev  externího vstupu &amp; kanál, který by měl tento ovladač řídit</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="168"/>
@@ -5255,7 +5400,7 @@ Délka: %3
     <message>
         <location filename="vcframeproperties.ui" line="210"/>
         <source>External Input - Previous page</source>
-        <translation type="unfinished"></translation>
+        <translation>Externí vstup - předchozí stránka</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="273"/>
@@ -5265,7 +5410,7 @@ Délka: %3
     <message>
         <location filename="vcframeproperties.ui" line="289"/>
         <source>Number of pages:</source>
-        <translation type="unfinished"></translation>
+        <translation>Počet stránek:</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="296"/>
@@ -5277,29 +5422,29 @@ Délka: %3
         <location filename="vcframeproperties.ui" line="302"/>
         <source>Bind a key combination to skip to the next frame page</source>
         <oldsource>Bind a key combination to skip to the next cue</oldsource>
-        <translation type="unfinished">Navázat kombinaci kláves pro přeskočení na další střih</translation>
+        <translation>Navázat kombinaci kláves pro přeskočení na další stránku</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="322"/>
         <location filename="vcframeproperties.ui" line="381"/>
         <source>Clear the key binding</source>
-        <translation type="unfinished">Odebrat přiřazenou klávesu</translation>
+        <translation>Odebrat přiřazenou klávesu</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="342"/>
         <source>The key combination used to go to the next frame page</source>
         <oldsource>The key combination used to step to the next cue</oldsource>
-        <translation type="unfinished">Kombinace kláves použitých pro posun na další krok střihu</translation>
+        <translation>Kombinace kláves použitých pro posun na další stránku</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="361"/>
         <source>Bind a key combination to skip to the previous frame page</source>
-        <translation type="unfinished"></translation>
+        <translation>Navázat kombinaci kláves pro přeskočení na předchozí stránku</translation>
     </message>
     <message>
         <location filename="vcframeproperties.ui" line="401"/>
         <source>The key combination used to go to the previous frame page</source>
-        <translation type="unfinished"></translation>
+        <translation>Kombinace kláves použita pro posun na předchozí stránku</translation>
     </message>
 </context>
 <context>
@@ -5881,22 +6026,22 @@ Délka: %3
     <message>
         <location filename="vcsliderproperties.ui" line="574"/>
         <source>Submaster</source>
-        <translation type="unfinished"></translation>
+        <translation>Submaster</translation>
     </message>
     <message>
         <location filename="vcsliderproperties.ui" line="580"/>
         <source>Slider submaster mode is active</source>
-        <translation type="unfinished"></translation>
+        <translation>Režim submaster je aktivní</translation>
     </message>
     <message>
         <location filename="vcsliderproperties.ui" line="603"/>
         <source>Make the slider act as a submaster</source>
-        <translation type="unfinished"></translation>
+        <translation>Šavle bude sloužit jako submaster</translation>
     </message>
     <message>
         <location filename="vcsliderproperties.ui" line="606"/>
         <source>Switch to Submaster Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepnout do režimu submaster</translation>
     </message>
     <message>
         <location filename="vcsliderproperties.cpp" line="677"/>
@@ -6068,17 +6213,17 @@ Délka: %3
     <message>
         <location filename="vcspeeddialproperties.ui" line="331"/>
         <source>Keyboard combination to control the dial tap</source>
-        <translation type="unfinished"></translation>
+        <translation>Kombinace kláves pro ťuknutí (TAP)</translation>
     </message>
     <message>
         <location filename="vcspeeddialproperties.ui" line="341"/>
         <source>Set a key combination for this dial</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavit kombinaci kláves pro ovládání ťuknutí (TAP)</translation>
     </message>
     <message>
         <location filename="vcspeeddialproperties.ui" line="361"/>
         <source>Remove the dial&apos;s keyboard shortcut key</source>
-        <translation type="unfinished"></translation>
+        <translation>Odebrat zkratkovou klávesu</translation>
     </message>
 </context>
 <context>
@@ -6320,6 +6465,42 @@ Délka: %3
     </message>
 </context>
 <context>
+    <name>VideoItem</name>
+    <message>
+        <location filename="sceneitems.cpp" line="1128"/>
+        <location filename="sceneitems.cpp" line="1237"/>
+        <source>Name: %1
+Start time: %2
+Duration: %3
+%4</source>
+        <translation>Název: %1
+Začátek: %2
+Délka: %3
+%4</translation>
+    </message>
+    <message>
+        <location filename="sceneitems.cpp" line="1132"/>
+        <location filename="sceneitems.cpp" line="1241"/>
+        <source>Click to move this video across the timeline</source>
+        <translation>Klikněte pro přesunutí tohoto videa na časové ose</translation>
+    </message>
+    <message>
+        <location filename="sceneitems.cpp" line="1146"/>
+        <source>Fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sceneitems.cpp" line="1153"/>
+        <source>Align to cursor</source>
+        <translation>Zarovnat ke kurzoru</translation>
+    </message>
+    <message>
+        <location filename="sceneitems.cpp" line="1333"/>
+        <source>Screen %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>VirtualConsole</name>
     <message>
         <location filename="virtualconsole.cpp" line="294"/>
@@ -6384,7 +6565,7 @@ Délka: %3
     <message>
         <location filename="virtualconsole.cpp" line="330"/>
         <source>New Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>Nové hodiny</translation>
     </message>
     <message>
         <location filename="virtualconsole.cpp" line="351"/>
@@ -6511,7 +6692,7 @@ Délka: %3
     <message>
         <location filename="virtualconsole.cpp" line="854"/>
         <source>Knob %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Knoflík %1</translation>
     </message>
     <message>
         <location filename="virtualconsole.cpp" line="1110"/>

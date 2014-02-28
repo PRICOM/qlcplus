@@ -89,7 +89,9 @@ private slots:
     void slotPaste();
     void slotCopyToAll();
     void slotColorTool();
+    void slotPositionTool();
     QColor slotColorSelectorChanged(const QColor &color);
+    void slotPositionSelectorChanged(const QPointF &position);
     void slotSpeedDialToggle(bool state);
     void slotBlindToggled(bool state);
     void slotRecord();
@@ -99,6 +101,7 @@ private slots:
 
 private:
     bool isColorToolAvailable();
+    bool isPositionToolAvailable();
     void createSpeedDials();
     Chaser* selectedChaser() const;
 
@@ -109,6 +112,7 @@ private:
     QAction* m_pasteAction;
     QAction* m_copyToAllAction;
     QAction* m_colorToolAction;
+    QAction* m_positionToolAction;
     QAction* m_blindAction;
     QAction* m_recordAction;
     QAction* m_speedDialAction;
@@ -141,9 +145,10 @@ private slots:
 
     void slotFadeInChanged(int ms);
     void slotFadeOutChanged(int ms);
+    void slotDialDestroyed(QObject* dial);
 
 private:
-    SpeedDialWidget* m_speedDials;
+    QPointer<SpeedDialWidget> m_speedDials;
 
     /*********************************************************************
      * Channels groups

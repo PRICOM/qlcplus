@@ -42,15 +42,20 @@
 #include "chaser.h"
 #include "doc.h"
 
-#if defined( __APPLE__) || defined(Q_OS_MAC)
-  #include "audiorenderer_portaudio.h"
-  #include "audiocapture_portaudio.h"
-#elif defined(WIN32) || defined(Q_OS_WIN)
-  #include "audiorenderer_waveout.h"
-  #include "audiocapture_wavein.h"
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+ #if defined( __APPLE__) || defined(Q_OS_MAC)
+   #include "audiorenderer_portaudio.h"
+   #include "audiocapture_portaudio.h"
+ #elif defined(WIN32) || defined(Q_OS_WIN)
+   #include "audiorenderer_waveout.h"
+   #include "audiocapture_wavein.h"
+ #else
+   #include "audiorenderer_alsa.h"
+   #include "audiocapture_alsa.h"
+ #endif
 #else
-  #include "audiorenderer_alsa.h"
-  #include "audiocapture_alsa.h"
+ #include "audiorenderer_qt.h"
+ #include "audiocapture_qt.h"
 #endif
 
 #define POST_DATA_SIZE 1024
@@ -465,13 +470,13 @@ QString WebAccess::getFrameHTML(VCFrame *frame)
           "background-color: " + frame->backgroundColor().name() + "; "
           "border-radius: 4px;\n"
           "border: 1px solid " + border.name() + ";\">\n";
+    if (m_frameFound == false)
+    {
+        m_CSScode += frame->getCSS();
+        m_frameFound = true;
+    }
     if (frame->isHeaderVisible())
     {
-        if (m_frameFound == false)
-        {
-            m_CSScode += frame->getCSS();
-            m_frameFound = true;
-        }
         str += "<div class=\"vcframeHeader\" style=\"color:" +
                 frame->foregroundColor().name() + "\">" + frame->caption() + "</div>\n";
     }
@@ -493,13 +498,13 @@ QString WebAccess::getSoloFrameHTML(VCSoloFrame *frame)
           "background-color: " + frame->backgroundColor().name() + "; "
           "border-radius: 4px;\n"
           "border: 1px solid " + border.name() + ";\">\n";
+    if (m_soloFrameFound == false)
+    {
+        m_CSScode += frame->getCSS();
+        m_soloFrameFound = true;
+    }
     if (frame->isHeaderVisible())
     {
-        if (m_soloFrameFound == false)
-        {
-            m_CSScode += frame->getCSS();
-            m_soloFrameFound = true;
-        }
         str += "<div class=\"vcsoloframeHeader\" style=\"color:" +
                 frame->foregroundColor().name() + "\">" + frame->caption() + "</div>\n";
     }
@@ -1005,14 +1010,17 @@ QString WebAccess::getAudioConfigHTML()
     QString html = "";
     QList<AudioDeviceInfo> devList;
 
-#if defined( __APPLE__) || defined(Q_OS_MAC)
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+ #if defined( __APPLE__) || defined(Q_OS_MAC)
     devList = AudioRendererPortAudio::getDevicesInfo();
-#elif defined(WIN32) || defined(Q_OS_WIN)
+ #elif defined(WIN32) || defined(Q_OS_WIN)
     devList = AudioRendererWaveOut::getDevicesInfo();
-#else
+ #else
     devList = AudioRendererAlsa::getDevicesInfo();
+ #endif
+#else
+    devList = AudioRendererQt::getDevicesInfo();
 #endif
-
     html += "<table class=\"hovertable\" style=\"width: 100%;\">\n";
     html += "<tr><th>Input</th><th>Output</th></tr>\n";
     html += "<tr align=center>";

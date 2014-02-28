@@ -31,6 +31,9 @@
 #include "chaser.h"
 #include "script.h"
 #include "audio.h"
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include "video.h"
+#endif
 #include "scene.h"
 #include "show.h"
 #include "efx.h"
@@ -44,6 +47,9 @@ const QString KScriptString     (     "Script" );
 const QString KRGBMatrixString  (  "RGBMatrix" );
 const QString KShowString       (       "Show" );
 const QString KAudioString      (      "Audio" );
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+const QString KVideoString      (      "Video" );
+#endif
 const QString KUndefinedString  (  "Undefined" );
 
 const QString KLoopString       (       "Loop" );
@@ -183,6 +189,10 @@ QString Function::typeToString(Type type)
         return KShowString;
     case Audio:
         return KAudioString;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    case Video:
+        return KVideoString;
+#endif
     case Undefined:
     default:
         return KUndefinedString;
@@ -207,6 +217,10 @@ Function::Type Function::stringToType(const QString& string)
         return Show;
     else if (string == KAudioString)
         return Audio;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    else if (string == KVideoString)
+        return Video;
+#endif
     else
         return Undefined;
 }
@@ -231,6 +245,10 @@ QIcon Function::typeToIcon(Function::Type type)
         return QIcon(":/show.png");
     case Audio:
         return QIcon(":/audio.png");
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    case Video:
+        return QIcon(":/video.png");
+#endif
     case Undefined:
     default:
         return QIcon(":/function.png");
@@ -638,6 +656,10 @@ bool Function::loader(const QDomElement& root, Doc* doc)
         function = new class Show(doc);
     else if (type == Function::Audio)
         function = new class Audio(doc);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    else if (type == Function::Video)
+        function = new class Video(doc);
+#endif
     else
         return false;
 
